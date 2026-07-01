@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Email Header Forensics",
+  "version": "1.0.0",
+  "description": "Analyze suspicious emails for security investigation - phishing/spam triage with IP reputation, geolocation, and script detection",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.abuseipdb.com/*",
+    "https://ipinfo.io/*",
+    "https://www.virustotal.com/*",
+    "https://www.whoisxmlapi.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Email Header Forensics"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

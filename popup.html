@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Email Forensics</title>
+  <style>
+    body { font-family: Arial, sans-serif; width: 420px; padding: 10px; }
+    .header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #f1f5f9; border-radius: 8px; }
+    button { padding: 8px 16px; margin: 5px; }
+    textarea { width: 100%; height: 200px; }
+    .result-card { border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; margin: 10px 0; }
+    .badge { padding: 4px 10px; border-radius: 20px; font-weight: bold; }
+    .badge-high { background: #ef4444; color: white; }
+    .badge-medium { background: #f59e0b; color: white; }
+    .badge-low { background: #22c55e; color: white; }
+  </style>
+</head>
+<body>
+  <div id="mainView">
+    <div class="header">
+      <div>
+        <h2>🔍 Email Header Forensics</h2>
+        <p>Security Analysis Tool</p>
+      </div>
+      <button id="settingsBtn">⚙️</button>
+    </div>
+
+    <textarea id="emailInput" placeholder="Paste raw email headers here..."></textarea>
+
+    <div>
+      <button id="analyzeBtn">Analyze Email</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <div id="resultsContainer"></div>
+    <div id="errorContainer"></div>
+  </div>
+
+  <div id="settingsView" style="display:none;">
+    <h3>API Settings</h3>
+    <label>AbuseIPDB API Key</label><br>
+    <input type="password" id="abuseipdbKey" style="width:100%;"><br><br>
+    <label>ipinfo.io API Key</label><br>
+    <input type="password" id="ipinfoKey" style="width:100%;"><br><br>
+    <label>VirusTotal API Key</label><br>
+    <input type="password" id="virustotalKey" style="width:100%;"><br><br>
+    <button id="saveKeysBtn">Save API Keys</button>
+    <p><small>Get Free API Keys:<br>
+      • AbuseIPDB: abuseipdb.com<br>
+      • ipinfo.io: ipinfo.io<br>
+      • VirusTotal: virustotal.com
+    </small></p>
+    <button id="backBtn">← Back</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
