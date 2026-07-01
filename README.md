@@ -46,7 +46,7 @@ You will need free API keys from the following services:
 
 After obtaining the keys:
 1. Click the extension icon
-2. Go to **Options**
+2. Go to **Api Settings**
 3. Enter your API keys in the respective fields
 
 ## Technologies
