@@ -32,9 +32,8 @@ The extension extracts sender information from email headers and performs compre
 
 1. Clone or download this repository
 2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable **Developer Mode** in the top right corner
-4. Click **Load unpacked** and select the extension folder
-5. Pin the extension icon to your toolbar for easy access
+3. Click **Load unpacked** and select the extension folder
+4. Pin the extension icon to your toolbar for easy access
 
 ## Configuration
 
