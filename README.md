@@ -1,4 +1,6 @@
 <img width="661" height="391" alt="email" src="https://github.com/user-attachments/assets/e4062faa-2c06-46aa-84b2-f3be6f9a1153" />
+
+
 # Email Header Forensics
 
 A browser extension for analyzing suspicious emails.
